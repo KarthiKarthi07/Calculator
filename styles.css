@@ -1,0 +1,184 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(assets/bg.png);
+  background-size: 100%;
+}
+
+@font-face {
+  font-family: 'Product Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Regular'), url('fonts/ProductSans-Regular.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Italic'), url('fonts/ProductSans-Italic.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Thin Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Thin Regular'), url('fonts/ProductSans-Thin.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Light Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Light Regular'), url('fonts/ProductSans-Light.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Medium Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Medium Regular'), url('fonts/ProductSans-Medium.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Black Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Black Regular'), url('fonts/ProductSans-Black.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Thin Italic'), url('fonts/ProductSans-ThinItalic.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Light Italic'), url('fonts/ProductSans-LightItalic.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Medium Italic'), url('fonts/ProductSans-MediumItalic.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Bold'), url('fonts/ProductSans-Bold.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Bold Italic'), url('fonts/ProductSans-BoldItalic.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Product Sans Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Product Sans Black Italic'), url('fonts/ProductSans-BlackItalic.woff') format('woff');
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px); 
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+  font-family:'Product Sans Regular';
+  font-weight: normal;
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+  background: #000 !important;
+  opacity: .75;
+  color: #fff;
+}
+
+.span-two:hover {
+  background: #0D1321 !important;
+  opacity: .75;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, #FD6A11 33.26%, rgba(255, 255, 255, 0) 133.04%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.first-art {
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+
+.s-art {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: 450px;
+  left: 60px;
+}
+
+.third-art {
+  position: absolute;
+  left: 1150px;
+  top: 250px;
+}
